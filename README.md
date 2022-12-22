@@ -1,23 +1,18 @@
-# Aerostack2
+# crazyflie_platform
+ AS2 Crazyflie platform interface.
 
-Aerostack2 is a framework developed to fly aerial platforms using ROS2.
+## crazyflie_cpp
+This is the main library to control and communicate with the crazyflie drone. Check the Crazyflie.h to get an idea of the main functions.
 
-![Build for Ubuntu 22.04 and ROS humble](https://github.com/aerostack2/aerostack2/actions/workflows/build-humble.yaml/badge.svg)
-![Build for Ubuntu 20.04 and ROS galactic](https://github.com/aerostack2/aerostack2/actions/workflows/build-galactic.yaml/badge.svg)
+It is avaliable in GitHub: https://github.com/whoenig/crazyflie_cpp/tree/master
 
-Most important features:
-- Natively developed on ROS2
-- Complete modularity, allowing elements to be changed or interchanged without affecting the rest of the system
-- Independence of the aerial platform.
-- Project-oriented, allowing to install and use only the necessary packages for the application to be developed. 
-- Swarming orientation.
+Some examples with this library can be found at:
+https://github.com/whoenig/crazyflie_tools
 
-Installation instructions can be found [[here]](https://aerostack2.github.io/_installation/index.html).
+## TODO
+- Add Attitude control mode. The thrust is a uint16_t type but there is no information about the range that it has. (Whether 0- full range, % , etc). This is further explained on issue #12
 
-Please visit the [[Aerostack2 Documentation]](https://aerostack2.github.io) for a complete documentation.
-
-
-#installation commands
-````
-$ pip3 install pyros-genmsg
-````
+## Info
+- Run debug mode to see more information about the drone and the connection.
+- You need to have connected the Crazyflie Radio to connect with the drone.
+-  See [project_crazyflie](https://github.com/aerostack2-developers/project_crazyflie) to see an example application with the python interface.
