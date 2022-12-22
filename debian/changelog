@@ -1,0 +1,24 @@
+ros-humble-as2-state-estimator (0.2.2-1bullseye) bullseye; urgency=high
+
+
+
+ -- Computer Vision And Aerial Robotics Group (UPM) <cvar.upm3@gmail.com>  Mon, 19 Dec 2022 23:00:00 -0000
+
+ros-humble-as2-state-estimator (0.2.1-1bullseye) bullseye; urgency=high
+
+  * Merge pull request #21 <https://github.com/aerostack2/aerostack2/issues/21> from aerostack2/launcher_update
+    Update launchers
+  * Update launchers
+  * Merge pull request #12 <https://github.com/aerostack2/aerostack2/issues/12> from aerostack2/as2_state_estimator_launch
+    [as2_state_estimator] Update parameters config file
+  * Update parameters config file
+  * bug fixed in external odom plugin
+  * as2_state_estimator pluginized
+  * Merge pull request #1 <https://github.com/aerostack2/aerostack2/issues/1> from aerostack2/state_estimation_pluginized
+    State estimation pluginized
+  * state estimation folder structured
+  * Contributors: Miguel, Miguel Fernandez-Cortizas, RPS98
+
+ -- Computer Vision And Aerial Robotics Group (UPM) <cvar.upm3@gmail.com>  Sun, 18 Dec 2022 23:00:00 -0000
+
+
