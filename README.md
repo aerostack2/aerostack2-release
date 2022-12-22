@@ -1,23 +1,21 @@
-# Aerostack2
+# tello_platform
+AS2 DJI Tello platform interface.
 
-Aerostack2 is a framework developed to fly aerial platforms using ROS2.
+This repository includes the necessary functions to communicate with Tello DJI drone and create a link with aerostack2 framework. This package has been developed in C++ and ROS2.
+## tello_connection
+Inside this part, there are the main C++ classes to make the connection with the robot platform. Check the tello.hpp and socketudp.hpp within include folder. It can be tested separately with clientudp.cpp. In this case, it is possible to compile it with the /tello_connection/CMakeLists.txt
+Create a folder and move it inside:
 
-![Build for Ubuntu 22.04 and ROS humble](https://github.com/aerostack2/aerostack2/actions/workflows/build-humble.yaml/badge.svg)
-![Build for Ubuntu 20.04 and ROS galactic](https://github.com/aerostack2/aerostack2/actions/workflows/build-galactic.yaml/badge.svg)
+		mkdir build && cd build
 
-Most important features:
-- Natively developed on ROS2
-- Complete modularity, allowing elements to be changed or interchanged without affecting the rest of the system
-- Independence of the aerial platform.
-- Project-oriented, allowing to install and use only the necessary packages for the application to be developed. 
-- Swarming orientation.
+Create compilation files:
 
-Installation instructions can be found [[here]](https://aerostack2.github.io/_installation/index.html).
+		cmake ..
 
-Please visit the [[Aerostack2 Documentation]](https://aerostack2.github.io) for a complete documentation.
+Make the compilation:
 
+		make
 
-#installation commands
-````
-$ pip3 install pyros-genmsg
-````
+But in the test tello_connection clientudp.cpp, currently, there are not too many tests, however any test can be tested there and done separately from the framework. 
+## tello_platform 
+It is the main section. Check the include/tello_platform.hpp library where the main class with its methods and attributes are stated. By other hand, in src/tello_platform.cpp they are coded. 
