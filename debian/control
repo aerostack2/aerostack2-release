@@ -1,0 +1,12 @@
+Source: ros-humble-aerostack2
+Section: misc
+Priority: optional
+Maintainer: Miguel Fernandez-Cortizas <miguel.fernandez.cortizas@upm.es>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-aerostack2
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-as2-aerial-platform, ros-humble-as2-behavior-tree, ros-humble-as2-behaviors, ros-humble-as2-cli, ros-humble-as2-controller, ros-humble-as2-core, ros-humble-as2-hardware-drivers, ros-humble-as2-motion-reference-handlers, ros-humble-as2-msgs, ros-humble-as2-python-api, ros-humble-as2-simulation-assets, ros-humble-as2-state-estimator, ros-humble-as2-user-interface, ros-humble-ros-workspace
+Description: Aerostack2 is a ROS2-based framework for the development of autonomous systems for aerial robotics.
