@@ -1,0 +1,12 @@
+Source: ros-humble-land-plugins
+Section: misc
+Priority: optional
+Maintainer: Computer Vision And Aerial Robotics Group (UPM) <cvar.upm3@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake-clang-format <!nocheck>, ros-humble-ament-cmake-cppcheck <!nocheck>, ros-humble-ament-cmake-cpplint <!nocheck>, ros-humble-ament-cmake-ros, ros-humble-ament-lint-auto <!nocheck>, ros-humble-as2-behavior, ros-humble-as2-core, ros-humble-as2-motion-reference-handlers, ros-humble-as2-msgs, ros-humble-land-plugin-base, ros-humble-nav-msgs, ros-humble-pluginlib, ros-humble-rclcpp, ros-humble-rclcpp-action, ros-humble-std-srvs, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-land-plugins
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-as2-behavior, ros-humble-as2-core, ros-humble-as2-motion-reference-handlers, ros-humble-as2-msgs, ros-humble-land-plugin-base, ros-humble-nav-msgs, ros-humble-pluginlib, ros-humble-rclcpp, ros-humble-rclcpp-action, ros-humble-std-srvs, ros-humble-ros-workspace
+Description: AS2 land behaviours plugins
