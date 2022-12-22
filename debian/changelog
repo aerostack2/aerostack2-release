@@ -1,0 +1,15 @@
+ros-humble-as2-controller (0.2.2-1bullseye) bullseye; urgency=high
+
+
+
+ -- Miguel Fernandez-Cortizas <miguel.fernandez.cortizas@upm.es>  Mon, 19 Dec 2022 23:00:00 -0000
+
+ros-humble-as2-controller (0.2.1-1bullseye) bullseye; urgency=high
+
+  * as2_controller packages renamed
+  * as2_controller reestructured
+  * Contributors: miferco97
+
+ -- Miguel Fernandez-Cortizas <miguel.fernandez.cortizas@upm.es>  Sun, 18 Dec 2022 23:00:00 -0000
+
+
