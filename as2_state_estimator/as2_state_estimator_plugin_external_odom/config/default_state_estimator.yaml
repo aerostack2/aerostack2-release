@@ -1,3 +1,0 @@
-/**:
-  ros__parameters:
-    odometry_topic: "sensor_measurements/odom"
