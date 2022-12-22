@@ -1,0 +1,12 @@
+Source: ros-humble-as2-behaviors
+Section: misc
+Priority: optional
+Maintainer: Miguel Fernandez-Cortizas <miguel.fernandez.cortizas@upm.es>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-as2-behaviors
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-as2-aruco-detector, ros-humble-as2-behavior, ros-humble-as2-movement-behaviors, ros-humble-as2-platform-behaviors, ros-humble-as2-trajectory-generator, ros-humble-ros-workspace
+Description: AS2 Behaviors Meta Package
