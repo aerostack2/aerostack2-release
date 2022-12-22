@@ -1,0 +1,12 @@
+Source: ros-humble-as2-aerial-platform
+Section: misc
+Priority: optional
+Maintainer: Miguel Fernandez-Cortizas <miguel.fernandez.cortizas@upm.es>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-as2-aerial-platform
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-as2-crazyflie-platform, ros-humble-as2-pixhawk-platform, ros-humble-as2-tello-platform, ros-humble-ros-workspace
+Description: AS2 Aerial Platform Meta Package
