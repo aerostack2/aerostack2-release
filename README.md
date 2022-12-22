@@ -1,23 +1,30 @@
-# Aerostack2
+# AS2_behavior library
 
-Aerostack2 is a framework developed to fly aerial platforms using ROS2.
+Aerostack2 uses Behaviors to handle mission execution
 
-![Build for Ubuntu 22.04 and ROS humble](https://github.com/aerostack2/aerostack2/actions/workflows/build-humble.yaml/badge.svg)
-![Build for Ubuntu 20.04 and ROS galactic](https://github.com/aerostack2/aerostack2/actions/workflows/build-galactic.yaml/badge.svg)
+Each behavior is separated in a behavior Server and a behavior client.
+They are similar to rclcpp actions but with some differences. 
+- Each behavior server only attends to a single goal (client) at each moment.
+- Feedback is visible for all nodes 
+- They extend start, stop, and feedback with modify, pause, resume, and behavior state data.
 
-Most important features:
-- Natively developed on ROS2
-- Complete modularity, allowing elements to be changed or interchanged without affecting the rest of the system
-- Independence of the aerial platform.
-- Project-oriented, allowing to install and use only the necessary packages for the application to be developed. 
-- Swarming orientation.
+We use ros2 services for:
+- start
+- modify (the same syntax than start)
+- pause (std_srvs::srv::Empty)
+- resume (std_srvs::srv::Empty)
+- stop (std_srvs::srv::Empty)
 
-Installation instructions can be found [[here]](https://aerostack2.github.io/_installation/index.html).
+We use ros2 topics for:
+- Feedback
+- State
 
-Please visit the [[Aerostack2 Documentation]](https://aerostack2.github.io) for a complete documentation.
+We take advantage of ros2 action message definitions:
+- Goal: will be used in start and modify services
+- Feedback: Will be used in feedback
+- Response: (Maybe in state, or in inmediate behaviors)
 
-
-#installation commands
-````
-$ pip3 install pyros-genmsg
-````
+We difference between Inmediate, Recurrent and Regular (or goal oriented) behaviors:
+- Inmediate: act like a service, they dont give Fb and cannot be paused or modified.
+- Recurrent: they give feedback until they are stopped or paused.
+- Goal Oriented: they keep runing until a termination condition is met.
