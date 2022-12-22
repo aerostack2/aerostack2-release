@@ -1,0 +1,26 @@
+ros-humble-as2-state-estimator-plugin-ground-truth (0.2.2-1jammy) jammy; urgency=high
+
+
+
+ -- Computer Vision And Aerial Robotics Group (UPM) <cvar.upm3@gmail.com>  Mon, 19 Dec 2022 23:00:00 -0000
+
+ros-humble-as2-state-estimator-plugin-ground-truth (0.2.1-1jammy) jammy; urgency=high
+
+  * Merge pull request #68 <https://github.com/aerostack2/aerostack2/issues/68> from aerostack2/state_estimator_odom_config_file
+    Add config file to state estimator external odom plugin with odom topic
+  * Add config file to state estimator external odom plugin with odom topic
+  * Merge pull request #12 <https://github.com/aerostack2/aerostack2/issues/12> from aerostack2/as2_state_estimator_launch
+    [as2_state_estimator] Update parameters config file
+  * Update parameters config file
+  * bug fixed
+  * bug fixed in ground truth plugin
+  * as2_state_estimator pluginized
+  * Merge pull request #1 <https://github.com/aerostack2/aerostack2/issues/1> from aerostack2/state_estimation_pluginized
+    State estimation pluginized
+  * plugin base dependence added to package.xml
+  * basic_state_estimator ground_truth_plugin uploaded
+  * Contributors: Miguel, Miguel Fernandez-Cortizas, RPS98, pariaspe
+
+ -- Computer Vision And Aerial Robotics Group (UPM) <cvar.upm3@gmail.com>  Sun, 18 Dec 2022 23:00:00 -0000
+
+
